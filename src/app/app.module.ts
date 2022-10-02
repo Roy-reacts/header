@@ -7,9 +7,20 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import { MatMenuModule} from '@angular/material/menu';
+import { HomeComponent } from './components/Home/home/home.component';
+import { FeaturedProductsComponent } from './components/Home/home/featured-products/featured-products.component';
+import { HeaderComponent } from './layout/Header/header/header.component';
+import { FooterComponent } from './layout/Footer/footer/footer.component';
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    FeaturedProductsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +29,8 @@ import { MatMenuModule} from '@angular/material/menu';
     FlexLayoutModule,
     MatCardModule,
     MatMenuModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
