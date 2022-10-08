@@ -11,8 +11,10 @@ import { HomeComponent } from './components/Home/home/home.component';
 import { FeaturedProductsComponent } from './components/Home/home/featured-products/featured-products.component';
 import { HeaderComponent } from './layout/Header/header/header.component';
 import { FooterComponent } from './layout/Footer/footer/footer.component';
-
-
+import { MatToolbarModule} from  '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,11 @@ import { FooterComponent } from './layout/Footer/footer/footer.component';
     MatCardModule,
     MatMenuModule,
     NoopAnimationsModule,
-    
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
