@@ -1,19 +1,224 @@
-<mat-toolbar fxLayout="row" color="primary">
-  <span fxFlex>My Bank</span>
-  <button mat-button *ngFor="let item of menuItems" fxHide.xs>
-      <mat-icon class="mr">{{item.icon}}</mat-icon>
-      {{item.label}}
-  </button>
-  <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs>
-      <mat-icon>more_vert</mat-icon>
-  </button>
-  <mat-menu #dropMenu="matMenu">
-      <ng-container *ngFor="let item of menuItems">
-          <button mat-menu-item>
-              <mat-icon class="mr">{{item.icon}}</mat-icon>
-              {{item.label}}
-          </button>
-          <mat-divider></mat-divider>
-      </ng-container>
-  </mat-menu>
-</mat-toolbar>
+<div class="APP">
+  <!--Mega Menu-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container-fluid">
+    <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+        <!-- Megamenu-->
+        <li class="nav-item dropdown megamenu"><a id="megamneu" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase dropdown-toggle">Mega Menu</a>
+          <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu border-0 p-0 m-0">
+            <div class="container">
+              <div class="row bg-white rounded-0 m-0 shadow-sm">
+                <div class="col-lg-7 col-xl-8">
+                  <div class="p-4">
+                    <div class="row">
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://therichpost.com/wp-content/uploads/2021/11/mega.png)no-repeat; background-size: cover;"></div><br>              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown megamenu"><a id="megamneu" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase dropdown-toggle">Mega Menu</a>
+          <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu border-0 p-0 m-0">
+            <div class="container">
+              <div class="row bg-white rounded-0 m-0 shadow-sm">
+                <div class="col-lg-7 col-xl-8">
+                  <div class="p-4">
+                    <div class="row">
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://therichpost.com/wp-content/uploads/2021/11/mega.png)no-repeat; background-size: cover;"></div><br>              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown megamenu"><a id="megamneu" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase dropdown-toggle">Mega Menu</a>
+          <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu border-0 p-0 m-0">
+            <div class="container">
+              <div class="row bg-white rounded-0 m-0 shadow-sm">
+                <div class="col-lg-7 col-xl-8">
+                  <div class="p-4">
+                    <div class="row">
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://therichpost.com/wp-content/uploads/2021/11/mega.png)no-repeat; background-size: cover;"></div><br>              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown megamenu"><a id="megamneu" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase dropdown-toggle">Mega Menu</a>
+          <div aria-labelledby="dropdownMenuButton1" class="dropdown-menu border-0 p-0 m-0">
+            <div class="container">
+              <div class="row bg-white rounded-0 m-0 shadow-sm">
+                <div class="col-lg-7 col-xl-8">
+                  <div class="p-4">
+                    <div class="row">
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6 mb-4">
+                        <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                        <ul class="list-unstyled">
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                          <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://therichpost.com/wp-content/uploads/2021/11/mega.png)no-repeat; background-size: cover;"></div><br>              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+
+  <!--Menu Menu-->
+</div>
